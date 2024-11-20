@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Chat Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        color: #333;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+      .message {
+        font-size: 1.2em;
+        color: #555;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to test page #2!</h1>
+    <p>Click the chat icon to start a conversation!</p>
+
+    <img
+      src="https://www.rbc.ua/static/img/k/a/karpati_oseniyu_kuda_poehat_3_1200x675.jpg"
+      alt="Inspiring Image"
+    />
+
+    <div class="message" id="dailyMessage"></div>
+
+    <script>
+      const messages = [
+        "Have an amazing day!",
+        "Keep smiling, it suits you!",
+        "Make today unforgettable!",
+        "Stay positive and shine bright!",
+        "You can achieve anything today!",
+      ];
+
+      const randomMessage =
+        messages[Math.floor(Math.random() * messages.length)];
+
+      document.getElementById("dailyMessage").textContent = randomMessage;
+    </script>
+  </body>
+</html>
